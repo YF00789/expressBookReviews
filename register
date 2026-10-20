@@ -1,0 +1,5 @@
+Invoke-RestMethod -Uri "http://localhost:5000/register" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"username": "newuser", "password": "mypassword"}'
+
+message                                        
+-------                                        
+User successfully registered. Now you can login

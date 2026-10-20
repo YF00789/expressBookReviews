@@ -1,0 +1,5 @@
+Invoke-RestMethod -Uri "http://localhost:5000/customer/login" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"username": "newuser", "password": "mypassword"}' -SessionVariable mySession
+User successfully logged in
+
+Invoke-RestMethod -Uri "http://localhost:5000/customer/auth/review/1?review=Excellent_Book" -Method Put -WebSession $mySession
+The review for the book with ISBN 1 has been added/updated.

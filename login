@@ -1,0 +1,2 @@
+Invoke-RestMethod -Uri "http://localhost:5000/customer/login" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{"username": "newuser", "password": "mypassword"}'
+User successfully logged in
